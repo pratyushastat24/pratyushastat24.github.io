@@ -1,0 +1,75 @@
+<!doctype html>
+  </div>
+  </div>
+  </section>
+  
+  
+  <section id="skills" class="card skills" style="margin-top:12px">
+    <h3>Skills</h3>
+    
+    
+    <!-- Each .bar-fill starts with width 0 and JS will animate to the data-percent -->
+    <div class="skill">
+      <div class="skill-name"><span>Nonparametric regression</span><span>95%</span></div>
+        <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="95">
+          <div class="bar-fill" data-percent="95"></div>
+            </div>
+            </div>
+            
+            
+            <div class="skill">
+              <div class="skill-name"><span>Gaussian processes</span><span>90%</span></div>
+                <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
+                  <div class="bar-fill" data-percent="90"></div>
+                    </div>
+                    </div>
+                    
+                    
+                    <div class="skill">
+                      <div class="skill-name"><span>Time series (multi-location)</span><span>92%</span></div>
+                        <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="92">
+                          <div class="bar-fill" data-percent="92"></div>
+                            </div>
+                            </div>
+                            
+                            
+                            <div class="skill">
+                              <div class="skill-name"><span>R</span><span>88%</span></div>
+                                <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88">
+                                  <div class="bar-fill" data-percent="88"></div>
+                                    </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="skill">
+                                      <div class="skill-name"><span>Python</span><span>80%</span></div>
+                                        <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">
+                                          <div class="bar-fill" data-percent="80"></div>
+                                            </div>
+                                            </div>
+                                            
+                                            
+                                            </section>
+                                            
+                                            
+                                            <footer>
+                                            <div class="small">This is a single-file starter site (index.html). To publish: create a GitHub repository, add this file as <code>index.html</code>, and enable GitHub Pages. See the instructions in the assistant message for step-by-step publishing help.</div>
+                                              </footer>
+                                              </div>
+                                              
+                                              
+                                              <script>
+                                              // Simple animation for the skill bars. Edit data-percent or inline styles to customize.
+                                            document.addEventListener('DOMContentLoaded',function(){
+                                              const fills = document.querySelectorAll('.bar-fill');
+                                              fills.forEach((f,i)=>{
+                                                const pct = f.getAttribute('data-percent') || '60';
+                                                // small stagger
+                                                setTimeout(()=>{
+                                                  f.style.width = pct + '%';
+                                                }, 120*i);
+                                              });
+                                            });
+                                            </script>
+                                              </body>
+                                              </html>
