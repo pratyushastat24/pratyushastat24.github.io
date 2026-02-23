@@ -3,22 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Pratyusha Sarkar</title>
+  <title>Pratyusha Sarkar - Statistics Research</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #111; color: #ddd; }
+    
+    /* Text highlight color */
+    ::selection {
+      background: #00bfff;
+      color: #000;
+    }
+
     nav { background: #000; padding: 10px 0; text-align: center; }
     nav a { color: #00bfff; margin: 0 15px; text-decoration: none; font-weight: bold; }
     nav a:hover { color: #fff; }
+    
     section { padding: 40px; max-width: 900px; margin: auto; line-height: 1.6; }
     h1, h2 { color: #fff; }
     a { color: #00bfff; text-decoration: none; }
     a:hover { text-decoration: underline; }
+
+    /* Profile layout */
+    .intro-container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .profile-pic {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00bfff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+
+    .intro-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .intro-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
 
   <nav>
-    <a href="about.html">About</a>
+    <a href="index.html">About</a>
     <a href="research.html">Research</a>
     <a href="teaching.html">Teaching</a>
     <a href="publications.html">Publications</a>
@@ -26,20 +65,26 @@
   </nav>
 
   <section>
-    <h1>About Me</h1>
-    <p>
-      I am a second-year Doctoral student in Statistics at the 
-      <a href="https://mathstat.umbc.edu/" target="_blank">Department of Mathematics and Statistics, University of Maryland, Baltimore County (UMBC)</a>[cite: 4, 5, 6]. 
-      Currently, I am working under the supervision of <strong>Dr. Anindya (Ansu) Roy</strong> and <strong>Dr. Snigdhanshu Chatterjee</strong>, 
-      focusing on the equation discovery of stochastic dynamical systems.
-    </p>
+    <div class="intro-container">
+      <img src="profile.jpg" alt="Pratyusha Sarkar" class="profile-pic">
+      
+      <div class="intro-text">
+        <h1>About Me</h1>
+        <p>
+          I am a second-year Doctoral student in Statistics at the 
+          [cite_start]<a href="https://mathstat.umbc.edu/" target="_blank">Department of Mathematics and Statistics, University of Maryland, Baltimore County (UMBC)</a>[cite: 4, 5, 6]. 
+          Currently, I am working under the supervision of <strong>Dr. Anindya (Ansu) Roy</strong> and <strong>Dr. Snigdhanshu Chatterjee</strong>, 
+          [cite_start]focusing on the equation discovery of stochastic dynamical systems[cite: 31, 37].
+        </p>
+      </div>
+    </div>
 
     <p>
       Before joining UMBC, I earned my <strong>Master of Science (M.Sc) in Statistics</strong> from the 
-      Department of Mathematics & Statistics, <strong>Indian Institute of Technology (IIT), Kanpur</strong>[cite: 8, 9]. 
+      [cite_start]Department of Mathematics & Statistics, <strong>Indian Institute of Technology (IIT), Kanpur</strong>[cite: 8, 9]. 
       During my time at IIT Kanpur, I gained significant research experience working under the guidance of <strong>Dr. Dootika Vats</strong>, 
-      where I focused on Bayesian Phylogenetic Tree inference and high-dimensional prediction models[cite: 47, 53]. 
-      Precedingly, I obtained my <strong>Bachelor of Science (B.Sc) in Statistics Honours</strong> from the <strong>University of Calcutta</strong>[cite: 11].
+      [cite_start]where I focused on Bayesian Phylogenetic Tree inference and high-dimensional prediction models[cite: 47, 53]. 
+      [cite_start]Precedingly, I obtained my <strong>Bachelor of Science (B.Sc) in Statistics Honours</strong> from the <strong>University of Calcutta</strong>[cite: 11].
     </p>
   </section>
 
