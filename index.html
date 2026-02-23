@@ -6,64 +6,93 @@
   <title>Pratyusha Sarkar - Statistics Research</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #111; color: #ddd; }
-    nav { background: #000; padding: 10px 0; text-align: center; position: sticky; top: 0; z-index: 100;}
+    
+    /* Text highlight color */
+    ::selection {
+      background: #00bfff;
+      color: #000;
+    }
+
+    nav { background: #000; padding: 10px 0; text-align: center; }
     nav a { color: #00bfff; margin: 0 15px; text-decoration: none; font-weight: bold; }
     nav a:hover { color: #fff; }
-    section { padding: 40px; max-width: 900px; margin: auto; }
-    h1,h2 { color: #fff; }
+    
+    section { padding: 40px; max-width: 900px; margin: auto; line-height: 1.6; }
+    h1, h2 { color: #fff; }
+    a { color: #00bfff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-    /* New styles for profile picture and layout */
+    /* Profile layout */
     .intro-container {
-        display: flex;
-        align-items: center;
-        gap: 40px; /* Space between image and text */
-    }
-    .profile-pic {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 3px solid #00bfff;
-        object-fit: cover;
-    }
-    .intro-text {
-        flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 20px;
     }
 
-    /* Responsive styles for smaller screens */
+    .profile-pic {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00bfff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+
+    .intro-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    /* Responsive adjustments */
     @media (max-width: 600px) {
-        .intro-container {
-            flex-direction: column;
-            text-align: center;
-            gap: 20px;
-        }
+      .intro-container {
+        flex-direction: column;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
 
-    <nav>
-    <a href="about.html">About</a>
+  <nav>
+    <a href="index.html">Home</a>
     <a href="research.html">Research</a>
     <a href="teaching.html">Teaching</a>
     <a href="publications.html">Publications</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-
   <section>
     <div class="intro-container">
-      <img src="https://placehold.co/150x150/333/00bfff?text=PS" alt="Pratyusha Sarkar" class="profile-pic">
+      <img src="profile.jpg" alt="Pratyusha Sarkar" class="profile-pic">
+      
       <div class="intro-text">
-        <h1>Welcome to My Website</h1>
-        <p>I am <b>Pratyusha Sarkar</b>, a statistics researcher working in areas such as Bayesian nonparametrics, Gaussian processes, and applied probability.</p>
+        <h1>About Me</h1>
+        <p>
+          I am a second-year Doctoral student in Statistics at <a href="https://mathstat.umbc.edu/" target="_blank">Department of Mathematics and Statistics, University of Maryland, Baltimore County (UMBC)</a>. 
+          Currently, I am working under the supervision of <strong>Dr. Snigdhanshu Chatterjee</strong>, focusing on the equation discovery of stochastic dynamical systems.
+        </p>
       </div>
     </div>
+
+    <p>
+      Before joining UMBC, I earned my <strong>Master of Science (M.Sc) in Statistics</strong> from the 
+      Department of Mathematics & Statistics, <strong>Indian Institute of Technology (IIT), Kanpur</strong>. 
+      During my time at IIT Kanpur, I gained significant research experience working under the guidance of<a href = " https://dvats.github.io/" target = "_blank"><strong>Dr. Dootika Vats</strong> </a>, 
+     where I focused on Bayesian Phylogenetic Tree inference and high-dimensional prediction models. 
+      Precedingly, I obtained my <strong>Bachelor of Science (B.Sc) in Statistics Honours</strong> from the <strong>University of Calcutta</strong>.
+    </p>
+
+  <h3>Research Interests</h3>
+<ul>
+  <li><strong>Nonparametric Statistics:</strong> Local polynomial regression and state reconstruction.</li>
+  <li><strong>Bayesian Methods:</strong> Bayesian Inference and Phylogenetic MCMC sampling[cite: 46, 49].</li>
+  <li><strong>Causal & Predictive Inference:</strong> High-dimensional prediction models and stochastic system identification[cite: 28, 36].</li>
+</ul>
   </section>
 
 </body>
 </html>
-
-
-
-
 
