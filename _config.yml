@@ -1,0 +1,40 @@
+# Site settings
+title: "Pratyusha Sarkar"
+description: "Portfolio and personal website of Pratyusha Sarkar."
+url: "https://pratyushastat24.github.io/"   # ← change to your GitHub Pages URL
+baseurl: ""                             # keep empty for user site YOURUSERNAME.github.io
+
+# Author settings
+author:
+  name: "Pratyusha Sarkar"
+  email: "pratyus1@umbc.edu"        # optional
+  # you can add more fields like:
+  # github: YOURUSERNAME
+  # linkedin: your-linkedin-handle
+
+# Footer settings (al-folio will use these)
+footer:
+  copyright: "© Copyright 2026 Pratyusha Sarkar."
+  powered_by: "Powered by Jekyll with al-folio theme."
+
+# Theme settings (basic minimal example; al-folio has many more options)
+remote_theme: "alshedivat/al-folio"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Collections used by al-folio (keep if they already exist in your repo)
+collections:
+  news:
+    output: true
+  projects:
+    output: true
+  # books:
+  #   output: true
+
+# Plugins often used with al-folio (adjust if your repo already has them)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
