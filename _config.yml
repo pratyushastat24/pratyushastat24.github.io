@@ -9,6 +9,13 @@ author:
   name: "Pratyusha Sarkar"
   email: "pratyus1@umbc.edu"
 
+# Social media settings
+social:
+  # email: "pratyus1@umbc.edu"  # uncomment if you want email in header
+  # github: "pratyushastat24"
+  # scholar: "YOUR_GOOGLE_SCHOLAR_ID"  # if you have one
+  # linkedin: "YOUR_LINKEDIN_PROFILE"  # if you have one
+
 # Footer settings (al-folio will use these)
 footer:
   copyright: "© Copyright 2026 Pratyusha Sarkar."
