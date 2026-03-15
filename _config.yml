@@ -1,43 +1,29 @@
+# GitHub Pages Jekyll Configuration
+# Simplified for production stability
+
 # Site settings
 title: "Pratyusha Sarkar"
 description: "Academic portfolio for Pratyusha Sarkar, PhD Student in Statistics at UMBC. Research on Nonparametric Statistics, Bayesian Methods, and Causal Inference."
-url: "https://pratyushastat24.github.io"   # no trailing slash
-baseurl: ""                                # keep empty for user site
-
-# Author settings
-author:
-  name: "Pratyusha Sarkar"
-  email: "pratyus1@umbc.edu"
-
-# Social media settings
-social:
-  # email: "pratyus1@umbc.edu"  # uncomment if you want email in header
-  # github: "pratyushastat24"
-  # scholar: "YOUR_GOOGLE_SCHOLAR_ID"  # if you have one
-  # linkedin: "YOUR_LINKEDIN_PROFILE"  # if you have one
-
-# Footer settings (al-folio will use these)
-footer:
-  copyright: "© Copyright 2026 Pratyusha Sarkar."
-  powered_by: "Powered by Jekyll with al-folio theme."
-
-# Theme settings
-remote_theme: "alshedivat/al-folio"
+author: "Pratyusha Sarkar"
+email: "pratyus1@umbc.edu"
+url: "https://pratyushastat24.github.io"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
+theme: jekyll-theme-minimal
 
-# Collections used by al-folio
-collections:
-  news:
-    output: true
-  projects:
-    output: true
-
-# Plugins often used with al-folio
+# Plugins (only GitHub Pages-supported plugins)
 plugins:
-  - jekyll-github-metadata
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-github-metadata
+
+# Exclude from processing
+exclude:
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
