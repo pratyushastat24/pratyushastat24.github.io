@@ -18,11 +18,43 @@ permaling: /
     a { color: #58a6ff; text-decoration: none; }
     a:hover { text-decoration: underline; }
     .main-content { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+    
+    /* Navigation Styles */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding-bottom: 30px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #333;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #c9d1d9;
+      font-size: 1.1em;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: color 0.2s ease;
+    }
+    nav a:hover {
+      color: #58a6ff;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
 
 <section class="main-content">
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="travel.html">Travel</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
   <div style="display: flex; flex-direction: row-reverse; gap: 60px; align-items: flex-start; flex-wrap: wrap;">
 
     <div style="flex: 1; min-width: 300px; text-align: center;">
@@ -79,13 +111,12 @@ permaling: /
 
         <h2 style="font-size: 2em; margin-top: 60px; font-weight: 400; color: #fff;">news</h2>
         <ul style="list-style: none; padding: 0; color: #888; font-size: 0.95em;">
-          <!-- Add news items here -->
-        </ul>
+          </ul>
 
       </div>
     </div>
 
   </div>
+</section>
 </body>
 </html>
-
